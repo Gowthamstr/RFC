@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(display6.jpg);
+    background-size: cover;
+            }
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+/* specific use */
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+
+/* .banner .content p {
+    font-size: 1em;
+    color: #fff; */
+
+/* } */
+
+/* .btn {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+} */
+
+/* navigation */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    /* box shadow like drop shadow */
+    box-shadow: 0 5px 20px rgb(0, 0, 60);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #ff0157
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    /* text decoration is dash avoid (none means avoid)*/
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* again menu styled so revoke */
+
+/* .menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(12, 1, 1, 0.08);
+}
+
+.menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.card_main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 1px solid rgba(233, 231, 231, 0.324);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+}
+
+.card .img img {
+    width: 300px;
+    height: 200px;
+}
+
+.card .card_content {
+    padding: 10px;
+}
+
+.card .card_content h2 {
+    text-align: center;
+}
+
+.contact {
+    background-color: #111;
+    /* background: url(logo_2.jpg); */
+    background-size: cover;
+    /* add */
+    background-position: center;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* specific input changes */
+
+.contactForm .inputBox input, .contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.box_main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    margin: 10px 0;
+    width: 200px;
+    margin-top: none;
+}
+
+.box .box_content {
+    padding: 5px;
+    text-align: justify;
+}
+
+.box .box_content h4 {
+    text-align: justify;
+}
+
+/* .box .box_contents p{
+    padding: 5px;
+    text-align: justify;
+} */
+
+/* .box .box_content p::first-letter{
+    color: rgb(255, 60, 0);
+    font-size: 40px; */
+
+/* } */
+
+.cards {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 50%;
+    margin: 40px;
+    /* my add */
+    flex-wrap: wrap;
+}
+.cards .cards_contents {
+    text-align: justify;
+    float: none;
+    padding-right: 50px;
+}
+
+.cards .cards_img img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding-right: 30px;
+}
+
+/* .profile {
+    height: 350px;
+    width: 25%;
+    margin-top: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.profile p {
+    margin-left: 50px;
+    display: flex;
+} */
+
+/* updates column */
+
+.updates .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    color: rgb(1, 1, 20);
+}
+
+.updates .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.updates .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    ;
+}
+
+.updates .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.updates .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.updates .content .box .text h3 {
+    font-weight: 400;
+}
+
+.title {
+    margin-left: 100px;
+    font-size: 1.1em;
+}
+
+.profile {
+    border: 1px solid rgb(191, 209, 26);
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    background-color: rgb(191, 209, 26);
+    margin: 100px;
+    text-align: justify;
+}
+/* added for mob screen purpose */
+/* Temporarily hide this */
+@media (max-width: 991px) {
+    /* header, header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(save.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky.menuToggle {
+        filter: invert(1);
+        /* additional add */
+    /* } */ 
+    /* Temporarily hide this */
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        position: relative;
+        width: 100%;
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .titleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    /* added for mob screen purpose */
+}
+.address_main .address h4{
+    color: rgb(243, 214, 47);
+    font-weight: 100;
+}
+.address_main .address p{
+    color: #fff;
+    }
+    /* BUTTON */
+    .Button a{
+        margin-top: 20px;
+        margin-left: 50%;
+        font-size: 1em;
+        color: #fff;
+        background: #ff0157;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        max-width: 100px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 5px;
+
+    }
